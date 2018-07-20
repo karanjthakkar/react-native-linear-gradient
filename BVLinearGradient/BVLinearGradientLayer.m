@@ -46,9 +46,10 @@
 - (void)display {
     [super display];
 
-    if (self.contents) {
-        CGImageRelease((CGImageRef)self.contents);
-    }
+    // FIXME: Commented out to fix detox crash
+    // if (self.contents) {
+    //     CGImageRelease((CGImageRef)self.contents);
+    // }
 
     BOOL hasAlpha = NO;
 
